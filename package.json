@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -24,7 +26,10 @@
     "lint": "npx eslint ./src/*",
     "lint:fix": "npx eslint --quiet --fix ./src/*",
     "prettier:format": "npx prettier --write ./src/*",
-    "format": "npm run prettier:format && npm run lint:fix"
+    "format": "npm run prettier:format && npm run lint:fix",
+    "test:coverage": "npm test -- --coverage --watchAll=false",
+    "test:inband": "npm test -- --runInBand",
+    "analyze": "source-map-explorer 'build/static/*/*.{js,css}"
   },
   "browserslist": {
     "production": [
@@ -39,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "@emotion/eslint-plugin": "^11.7.0",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "eslint": "^8.11.0",

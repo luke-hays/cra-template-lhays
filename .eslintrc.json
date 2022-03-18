@@ -29,7 +29,8 @@
     "plugins": [
         "react",
         "react-hooks",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "@emotion"
     ],
     "rules": {
         "no-use-before-define": "off",
@@ -63,6 +64,8 @@
         "no-useless-return": "warn",
         "no-empty-function": "warn",
         "@typescript-eslint/no-empty-function": "warn",
-        "react/react-in-jsx-scope": "off"
+        "react/react-in-jsx-scope": "off",
+        "@emotion/jsx-import": "error",
+        "@emotion/pkg-renaming": "error"
     }
 }
