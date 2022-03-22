@@ -29,7 +29,7 @@ const App = (): JSX.Element => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '100%',
+    height: '100vh',
   });
 
   const MainText = styled('div')({
