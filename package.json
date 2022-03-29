@@ -1,7 +1,6 @@
 {
   "name": "cra-template-lhays",
   "version": "0.1.0",
-  "private": true,
   "keywords": ["react", "typescript", "create-react-app", "template"],
   "description": "Base template for custom Create-React-App",
   "files": [
