@@ -9,6 +9,7 @@ const App = (): JSX.Element => {
     backgroundColor: theme.colors.backgroundBlack,
     color: 'white',
     margin: '0',
+    minHeight: '100vh',
   });
 
   const Header = styled('div')({
@@ -29,7 +30,6 @@ const App = (): JSX.Element => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '100vh',
   });
 
   const MainText = styled('div')({
